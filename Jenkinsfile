@@ -55,5 +55,29 @@ pipeline {
         stash(name: 'consumer', includes: 'fint-consumer-pwfa/**')
       }      
     }
+    stage('Commit Consumer') {
+      agent { 
+        docker {
+          label 'docker'
+          image 'fint/git:latest'
+        }
+      }
+      when {
+        tag pattern: "v\\d+\\.\\d+\\.\\d+(-\\w+-\\d+)?", comparator: "REGEXP"
+      }
+      steps {
+        script {
+          VERSION = TAG_NAME[1..-1]
+        }
+        git 'https://github.com/FINTlabs/fint-consumer-pwfa.git'
+        sh 'git clean -fdx'
+        unstash 'consumer'
+        sh 'git config user.email "jenkins@fintlabs.no"'
+        sh 'git config user.name "FINT Jenkins"'
+        sh 'git add .'
+        sh "git commit -m 'Version ${VERSION}'"
+        sh "git push 'https://${GITHUB}@github.com/FINTlabs/fint-consumer-pwfa.git' master:master"
+      }      
+    }
   }
 }
