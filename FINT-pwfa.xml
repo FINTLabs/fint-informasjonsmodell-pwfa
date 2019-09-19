@@ -4,7 +4,7 @@
 	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
 		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_00884FB6_B6A8_440c_8AF3_B49F2F60422A" name="Model" visibility="public">
 			<packagedElement xmi:type="uml:Package" xmi:id="EAPK_C4550D9B_D745_4cf8_90B4_630F72FAA715" name="FINT" visibility="public">
-				<packagedElement xmi:type="uml:Package" xmi:id="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" name="Demo" visibility="public">
+				<packagedElement xmi:type="uml:Package" xmi:id="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" name="Pwfa" visibility="public">
 					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" name="Pwfa" visibility="public">
 						<packagedElement xmi:type="uml:Class" xmi:id="EAID_8D5AE6FF_7DFB_4048_A1BA_6129D0FBE727" name="Dog" visibility="public">
 							<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_941EB2A6_E613_4d56_9B4F_80C7782087CD" name="breed" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
@@ -92,10 +92,10 @@
 				<times created="2018-02-17 02:23:24" modified="2018-04-26 12:37:20" lastloaddate="2018-03-12 12:31:03" lastsavedate="2018-03-12 12:31:03"/>
 				<flags iscontrolled="FALSE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="VICON=3;"/>
 			</element>
-			<element xmi:idref="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" xmi:type="uml:Package" name="Demo" scope="public">
+			<element xmi:idref="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" xmi:type="uml:Package" name="Pwfa" scope="public">
 				<model package2="EAID_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" package="EAPK_C4550D9B_D745_4cf8_90B4_630F72FAA715" tpos="0" ea_localid="9" ea_eleType="package"/>
 				<properties isSpecification="false" sType="Package" nType="0" scope="public" stereotype="ApplicationSchema"/>
-				<project author="Asgeir Nilsen" version="1.0" phase="1.0" created="2018-04-26 12:37:04" modified="2019-09-19 11:53:14" complexity="1" status="Proposed"/>
+				<project author="Asgeir Nilsen" version="1.0" phase="1.0" created="2018-04-26 12:37:04" modified="2019-09-19 12:01:48" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -109,7 +109,7 @@
 				<extendedProperties tagged="0" package_name="FINT"/>
 				<packageproperties version="1.0"/>
 				<paths/>
-				<times created="2018-04-26 12:37:04" modified="2019-09-19 11:53:14"/>
+				<times created="2018-04-26 12:37:04" modified="2019-09-19 12:01:48"/>
 				<flags iscontrolled="FALSE" isprotected="FALSE" usedtd="FALSE" logxml="FALSE"/>
 			</element>
 			<element xmi:idref="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" xmi:type="uml:Package" name="Pwfa" scope="public">
@@ -120,7 +120,7 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags/>
 				<xrefs/>
-				<extendedProperties tagged="0" package_name="Demo"/>
+				<extendedProperties tagged="0" package_name="Pwfa"/>
 				<packageproperties version="1.0"/>
 				<paths/>
 				<times created="2019-09-19 11:46:52" modified="2019-09-19 11:53:26"/>
