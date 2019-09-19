@@ -74,7 +74,7 @@ pipeline {
         sh 'git config user.email "jenkins@fintlabs.no"'
         sh 'git config user.name "FINT Jenkins"'
         unstash 'consumer'
-        sh 'mv fint-consumer-pwfa/* . && rmdir fint-consumer-pwfa'
+        sh 'cp -r fint-consumer-pwfa/* . && rm -r fint-consumer-pwfa'
         sh 'git add .'
         sh "git commit -m 'Version ${VERSION}'"
         sh "git push 'https://${GITHUB}@github.com/FINTLabs/fint-consumer-pwfa.git' master:master"
