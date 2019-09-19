@@ -12,7 +12,7 @@ pipeline {
         tag pattern: "v\\d+\\.\\d+\\.\\d+(-\\w+-\\d+)?", comparator: "REGEXP"
       }
       steps {
-        sh "docker run -i -v \$PWD:/src fint/fint-model:2.0.1 --repo fint-informasjonsmodell-pwfa --filename FINT-pwfa.xml --tag ${TAG_NAME} generate --resource"
+        sh "docker run -i -v \$PWD:/src fint/fint-model --repo fint-informasjonsmodell-pwfa --filename FINT-pwfa.xml --tag ${TAG_NAME} generate --resource"
         stash(name: 'java', includes: 'java/**')
       }
     }
@@ -51,7 +51,7 @@ pipeline {
         tag pattern: "v\\d+\\.\\d+\\.\\d+(-\\w+-\\d+)?", comparator: "REGEXP"
       }
       steps {
-        sh "docker run -i -v \$PWD:/src fint/fint-consumer:2.1.0 --repo fint-informasjonsmodell-pwfa --filename FINT-pwfa.xml --tag ${TAG_NAME} setup --name pwfa --component pwfa --package package"
+        sh "docker run -i -v \$PWD:/src fint/fint-consumer:2.1.0 --repo fint-informasjonsmodell-pwfa --filename FINT-pwfa.xml --tag ${TAG_NAME} setup --name pwfa --component demo --package pwfa"
         stash(name: 'consumer', includes: 'fint-consumer-pwfa/**')
       }      
     }

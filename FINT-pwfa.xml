@@ -4,8 +4,8 @@
 	<uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
 		<packagedElement xmi:type="uml:Package" xmi:id="EAPK_00884FB6_B6A8_440c_8AF3_B49F2F60422A" name="Model" visibility="public">
 			<packagedElement xmi:type="uml:Package" xmi:id="EAPK_C4550D9B_D745_4cf8_90B4_630F72FAA715" name="FINT" visibility="public">
-				<packagedElement xmi:type="uml:Package" xmi:id="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" name="Pwfa" visibility="public">
-					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" name="Package" visibility="public">
+				<packagedElement xmi:type="uml:Package" xmi:id="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" name="Demo" visibility="public">
+					<packagedElement xmi:type="uml:Package" xmi:id="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" name="Pwfa" visibility="public">
 						<packagedElement xmi:type="uml:Class" xmi:id="EAID_8D5AE6FF_7DFB_4048_A1BA_6129D0FBE727" name="Dog" visibility="public">
 							<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_941EB2A6_E613_4d56_9B4F_80C7782087CD" name="breed" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 								<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_E613_4d56_9B4F_80C7782087CD" value="0"/>
@@ -92,10 +92,10 @@
 				<times created="2018-02-17 02:23:24" modified="2018-04-26 12:37:20" lastloaddate="2018-03-12 12:31:03" lastsavedate="2018-03-12 12:31:03"/>
 				<flags iscontrolled="FALSE" isprotected="FALSE" batchsave="0" batchload="0" usedtd="FALSE" logxml="FALSE" packageFlags="VICON=3;"/>
 			</element>
-			<element xmi:idref="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" xmi:type="uml:Package" name="Pwfa" scope="public">
+			<element xmi:idref="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" xmi:type="uml:Package" name="Demo" scope="public">
 				<model package2="EAID_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" package="EAPK_C4550D9B_D745_4cf8_90B4_630F72FAA715" tpos="0" ea_localid="9" ea_eleType="package"/>
 				<properties isSpecification="false" sType="Package" nType="0" scope="public" stereotype="ApplicationSchema"/>
-				<project author="Asgeir Nilsen" version="1.0" phase="1.0" created="2018-04-26 12:37:04" modified="2019-09-19 11:34:08" complexity="1" status="Proposed"/>
+				<project author="Asgeir Nilsen" version="1.0" phase="1.0" created="2018-04-26 12:37:04" modified="2019-09-19 11:53:14" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
@@ -109,21 +109,21 @@
 				<extendedProperties tagged="0" package_name="FINT"/>
 				<packageproperties version="1.0"/>
 				<paths/>
-				<times created="2018-04-26 12:37:04" modified="2019-09-19 11:34:08"/>
+				<times created="2018-04-26 12:37:04" modified="2019-09-19 11:53:14"/>
 				<flags iscontrolled="FALSE" isprotected="FALSE" usedtd="FALSE" logxml="FALSE"/>
 			</element>
-			<element xmi:idref="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" xmi:type="uml:Package" name="Package" scope="public">
+			<element xmi:idref="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" xmi:type="uml:Package" name="Pwfa" scope="public">
 				<model package2="EAID_89A5BB6D_E72B_450d_9110_C8760C00E956" package="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" tpos="0" ea_localid="10" ea_eleType="package"/>
 				<properties isSpecification="false" sType="Package" nType="0" scope="public"/>
-				<project author="Asgeir Nilsen" version="1.0" phase="1.0" created="2019-09-19 11:46:52" modified="2019-09-19 11:46:52" complexity="1" status="Proposed"/>
+				<project author="Asgeir Nilsen" version="1.0" phase="1.0" created="2019-09-19 11:46:52" modified="2019-09-19 11:53:26" complexity="1" status="Proposed"/>
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags/>
 				<xrefs/>
-				<extendedProperties tagged="0" package_name="Pwfa"/>
+				<extendedProperties tagged="0" package_name="Demo"/>
 				<packageproperties version="1.0"/>
 				<paths/>
-				<times created="2019-09-19 11:46:52" modified="2019-09-19 11:46:52"/>
+				<times created="2019-09-19 11:46:52" modified="2019-09-19 11:53:26"/>
 				<flags iscontrolled="FALSE" isprotected="FALSE" usedtd="FALSE" logxml="FALSE"/>
 			</element>
 			<element xmi:idref="EAID_8D5AE6FF_7DFB_4048_A1BA_6129D0FBE727" xmi:type="uml:Class" name="Dog" scope="public">
@@ -134,7 +134,7 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags/>
 				<xrefs value="$XREFPROP=$XID={AB25D3FA-B0E8-477c-B955-727816808390}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=hovedklasse;GUID={7EA5AC81-F1D1-46df-B6B0-9A124718A927};@ENDSTEREO;$DES;$CLT={8D5AE6FF-7DFB-4048-A1BA-6129D0FBE727}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="Package"/>
+				<extendedProperties tagged="0" package_name="Pwfa"/>
 				<attributes>
 					<attribute xmi:idref="EAID_941EB2A6_E613_4d56_9B4F_80C7782087CD" name="breed" scope="Public">
 						<initial/>
@@ -196,7 +196,7 @@
 					<tag xmi:id="EAID_D5EC43DD_69BE_4b14_B08F_F4FE2322A063" name="md_guid" value="_18_4_13ab03b9_1472030486460_881186_4393" modelElement="EAID_16909330_2704_4b6a_A79C_D85F82732282"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={FE1BE001-4806-4a5d-B2B7-9E3985E677F1}$XID;$NAM=CustomProperties$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@PROP=@NAME=isActive@ENDNAME;@TYPE=Boolean@ENDTYPE;@VALU=0@ENDVALU;@PRMT=@ENDPRMT;@ENDPROP;$DES;$CLT={16909330-2704-4b6a-A79C-D85F82732282}$CLT;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="Package" ea_attsclassified="{CEB539E0-032E-439c-8165-4510E4F5254F},{00A15238-DA80-45c0-B566-833A90B26416}"/>
+				<extendedProperties tagged="0" package_name="Pwfa" ea_attsclassified="{CEB539E0-032E-439c-8165-4510E4F5254F},{00A15238-DA80-45c0-B566-833A90B26416}"/>
 				<attributes>
 					<attribute xmi:idref="EAID_D058AEE1_E15F_40a1_B390_5BAD8F06C02E" name="identifikatorverdi" scope="Public">
 						<initial/>
@@ -223,7 +223,7 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags/>
 				<xrefs value="$XREFPROP=$XID={F9305CCA-98BA-442d-BDF0-4E981CD58305}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=hovedklasse;GUID={D08F65EF-7D48-4ae0-A557-0B0AB5BB20BC};@ENDSTEREO;$DES;$CLT={500D8CFD-94F8-4eb1-A287-9ED81C3A27B3}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="Package"/>
+				<extendedProperties tagged="0" package_name="Pwfa"/>
 				<attributes>
 					<attribute xmi:idref="EAID_00A15238_DA80_45c0_B566_833A90B26416" name="id" scope="Public">
 						<initial/>
@@ -504,7 +504,7 @@
 		</profiles>
 		<diagrams>
 			<diagram xmi:id="EAID_ABEBB82B_C004_4b05_A6A9_D0C9B20C0C36">
-				<model package="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D" localID="1" owner="EAPK_EE659FFA_A0A5_485f_BE49_90EDE9064C2D"/>
+				<model package="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956" localID="1" owner="EAPK_89A5BB6D_E72B_450d_9110_C8760C00E956"/>
 				<properties name="Pwfa" type="Logical"/>
 				<project author="Frode Sjovatsen" version="1.0" created="2018-02-17 00:00:00" modified="2019-09-19 11:38:41"/>
 				<style1 value="ShowPrivate=1;ShowProtected=1;ShowPublic=1;HideRelationships=0;Locked=0;Border=1;HighlightForeign=1;PackageContents=1;SequenceNotes=0;ScalePrintImage=0;PPgs.cx=1;PPgs.cy=1;DocSize.cx=791;DocSize.cy=1134;ShowDetails=0;Orientation=P;Zoom=100;ShowTags=0;OpParams=1;VisibleAttributeDetail=0;ShowOpRetType=1;ShowIcons=1;CollabNums=0;HideProps=0;ShowReqs=0;ShowCons=0;PaperSize=257;HideParents=0;UseAlias=0;HideAtts=0;HideOps=0;HideStereo=0;HideElemStereo=0;ShowTests=0;ShowMaint=0;ConnectorNotation=UML 2.1;ExplicitNavigability=0;ShowShape=1;AdvancedElementProps=1;AdvancedFeatureProps=1;AdvancedConnectorProps=1;m_bElementClassifier=1;ShowNotes=0;SuppressBrackets=0;SuppConnectorLabels=0;PrintPageHeadFoot=0;ShowAsList=0;"/>
