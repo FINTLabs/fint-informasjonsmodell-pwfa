@@ -9,7 +9,7 @@
 						<packagedElement xmi:type="uml:Class" xmi:id="EAID_8D5AE6FF_7DFB_4048_A1BA_6129D0FBE727" name="Dog" visibility="public">
 							<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_941EB2A6_E613_4d56_9B4F_80C7782087CD" name="breed" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
 								<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000001_E613_4d56_9B4F_80C7782087CD" value="0"/>
-								<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000002_E613_4d56_9B4F_80C7782087CD" value="-1"/>
+								<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000002_E613_4d56_9B4F_80C7782087CD" value="1"/>
 								<type xmi:idref="EAJava_string"/>
 							</ownedAttribute>
 							<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_CEB539E0_032E_439c_8165_4510E4F5254F" name="id" visibility="public" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false">
@@ -144,7 +144,7 @@
 						<coords ordered="0"/>
 						<containment containment="Not Specified" position="1"/>
 						<stereotype/>
-						<bounds lower="0" upper="*"/>
+						<bounds lower="0" upper="1"/>
 						<options/>
 						<style/>
 						<styleex value="volatile=0;"/>
