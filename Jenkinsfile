@@ -69,14 +69,15 @@ pipeline {
         script {
           VERSION = TAG_NAME[1..-1]
         }
-        git 'https://github.com/FINTlabs/fint-consumer-pwfa.git'
+        git 'https://github.com/FINTLabs/fint-consumer-pwfa.git'
         sh 'git clean -fdx'
-        unstash 'consumer'
         sh 'git config user.email "jenkins@fintlabs.no"'
         sh 'git config user.name "FINT Jenkins"'
+        unstash 'consumer'
+        sh 'mv fint-consumer-pwfa/* . && rmdir fint-consumer-pwfa'
         sh 'git add .'
         sh "git commit -m 'Version ${VERSION}'"
-        sh "git push 'https://${GITHUB}@github.com/FINTlabs/fint-consumer-pwfa.git' master:master"
+        sh "git push 'https://${GITHUB}@github.com/FINTLabs/fint-consumer-pwfa.git' master:master"
       }      
     }
   }
