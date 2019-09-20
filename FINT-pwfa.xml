@@ -25,7 +25,7 @@
 							<ownedAttribute xmi:type="uml:Property" xmi:id="EAID_src9091AE_A148_426b_A8FD_E9AE672C53D6" name="owner" visibility="public" association="EAID_559091AE_A148_426b_A8FD_E9AE672C53D6" isStatic="false" isReadOnly="false" isDerived="false" isOrdered="false" isUnique="true" isDerivedUnion="false" aggregation="none">
 								<type xmi:idref="EAID_500D8CFD_94F8_4eb1_A287_9ED81C3A27B3"/>
 								<lowerValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000007__A148_426b_A8FD_E9AE672C53D6" value="0"/>
-								<upperValue xmi:type="uml:LiteralInteger" xmi:id="EAID_LI000008__A148_426b_A8FD_E9AE672C53D6" value="1"/>
+								<upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="EAID_LI000008__A148_426b_A8FD_E9AE672C53D6" value="-1"/>
 							</ownedAttribute>
 						</packagedElement>
 						<packagedElement xmi:type="uml:Association" xmi:id="EAID_559091AE_A148_426b_A8FD_E9AE672C53D6" visibility="public">
@@ -266,7 +266,7 @@
 				<source xmi:idref="EAID_500D8CFD_94F8_4eb1_A287_9ED81C3A27B3">
 					<model ea_localid="2" type="Class" name="Owner"/>
 					<role name="owner" visibility="Public" targetScope="instance"/>
-					<type multiplicity="0..1" aggregation="none" containment="Unspecified"/>
+					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
 					<style value="Union=0;Derived=0;AllowDuplicates=0;Owned=0;Navigable=Navigable;"/>
@@ -291,7 +291,7 @@
 				<parameterSubstitutions/>
 				<documentation/>
 				<appearance linemode="3" linecolor="-1" linewidth="0" seqno="0" headStyle="0" lineStyle="0"/>
-				<labels lb="0..1" lt="+owner" rb="0..*" rt="+dog"/>
+				<labels lb="0..*" lt="+owner" rb="0..*" rt="+dog"/>
 				<extendedProperties/>
 				<style/>
 				<xrefs/>
