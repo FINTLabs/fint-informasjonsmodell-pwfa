@@ -51,7 +51,7 @@ pipeline {
         tag pattern: "v\\d+\\.\\d+\\.\\d+(-\\w+-\\d+)?", comparator: "REGEXP"
       }
       steps {
-        sh "docker run -i -v \$PWD:/src fint/fint-consumer --repo fint-informasjonsmodell-pwfa --filename FINT-pwfa.xml --tag ${TAG_NAME} setup --name pwfa --component pwfa --package pwfa"
+        sh "docker run -i -v \$PWD:/src fint/fint-consumer:2.1.2 --repo fint-informasjonsmodell-pwfa --filename FINT-pwfa.xml --tag ${TAG_NAME} setup --name pwfa --component pwfa --package pwfa"
         stash(name: 'consumer', includes: 'fint-consumer-pwfa/**')
       }      
     }
